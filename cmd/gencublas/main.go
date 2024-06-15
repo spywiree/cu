@@ -17,7 +17,7 @@ import (
 	"path"
 	"strings"
 
-	bg "github.com/gorgonia/bindgen"
+	bg "github.com/spywiree/bindgen"
 	"modernc.org/cc"
 )
 

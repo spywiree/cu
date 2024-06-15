@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gorgonia/bindgen"
 	"github.com/kr/pretty"
+	"github.com/spywiree/bindgen"
 	"modernc.org/cc"
 )
 

@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	bg "github.com/gorgonia/bindgen"
 	"github.com/pkg/errors"
+	bg "github.com/spywiree/bindgen"
 )
 
 // Param represents a parameter in the signature

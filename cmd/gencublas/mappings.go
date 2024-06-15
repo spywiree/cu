@@ -4,7 +4,7 @@ import (
 	"text/template"
 
 	"github.com/cznic/cc"
-	bg "github.com/gorgonia/bindgen"
+	bg "github.com/spywiree/bindgen"
 )
 
 var skip = map[string]bool{

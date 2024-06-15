@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/gorgonia/bindgen"
+	"github.com/spywiree/bindgen"
 	"modernc.org/cc"
 )
 

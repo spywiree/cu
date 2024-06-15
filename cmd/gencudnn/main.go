@@ -11,7 +11,7 @@ import (
 	"os"
 	"path"
 
-	"github.com/gorgonia/bindgen"
+	"github.com/spywiree/bindgen"
 	"modernc.org/cc"
 )
 

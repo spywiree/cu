@@ -12,7 +12,7 @@ import (
 	"strings"
 	"text/template"
 
-	bg "github.com/gorgonia/bindgen"
+	bg "github.com/spywiree/bindgen"
 	"modernc.org/cc"
 	"modernc.org/xc"
 )
@@ -44,14 +44,15 @@ var goTypes = map[bg.TypeKey]bg.Template{
 // GoTypeFor returns a string representation of the given type using a mapping in
 // types. GoTypeFor will panic if no type mapping is found after searching the
 // user-provided types mappings and then the following mapping:
-//  {Kind: cc.Int}:                     "int",
-//  {Kind: cc.Float}:                   "float32",
-//  {Kind: cc.Float, IsPointer: true}:  "[]float32",
-//  {Kind: cc.Double}:                  "float64",
-//  {Kind: cc.Double, IsPointer: true}: "[]float64",
-//  {Kind: cc.Bool}:                    "bool",
-//  {Kind: cc.FloatComplex}:            "complex64",
-//  {Kind: cc.DoubleComplex}:           "complex128",
+//
+//	{Kind: cc.Int}:                     "int",
+//	{Kind: cc.Float}:                   "float32",
+//	{Kind: cc.Float, IsPointer: true}:  "[]float32",
+//	{Kind: cc.Double}:                  "float64",
+//	{Kind: cc.Double, IsPointer: true}: "[]float64",
+//	{Kind: cc.Bool}:                    "bool",
+//	{Kind: cc.FloatComplex}:            "complex64",
+//	{Kind: cc.DoubleComplex}:           "complex128",
 func GoTypeFor(typ cc.Type, name string, types ...map[bg.TypeKey]bg.Template) string {
 	if typ == nil {
 		return "<nil>"
@@ -147,17 +148,18 @@ var cgoTypes = map[bg.TypeKey]bg.Template{
 // CgoConversionFor returns a string representation of the given type using a mapping in
 // types. CgoConversionFor will panic if no type mapping is found after searching the
 // user-provided types mappings and then the following mapping:
-//  {Kind: cc.Void, IsPointer: true}:          "unsafe.Pointer(&{{.}}[0])",
-//  {Kind: cc.Int}:                            "C.int({{.}})",
-//  {Kind: cc.Float}:                          "C.float({{.}})",
-//  {Kind: cc.Float, IsPointer: true}:         "(*C.float)({{.}})",
-//  {Kind: cc.Double}:                         "C.double({{.}})",
-//  {Kind: cc.Double, IsPointer: true}:        "(*C.double)({{.}})",
-//  {Kind: cc.Bool}:                           "C.bool({{.}})",
-//  {Kind: cc.FloatComplex}:                   "unsafe.Pointer(&{{.}})",
-//  {Kind: cc.DoubleComplex}:                  "unsafe.Pointer(&{{.}})",
-//  {Kind: cc.FloatComplex, IsPointer: true}:  "unsafe.Pointer(&{{.}}[0])",
-//  {Kind: cc.DoubleComplex, IsPointer: true}: "unsafe.Pointer(&{{.}}[0])",
+//
+//	{Kind: cc.Void, IsPointer: true}:          "unsafe.Pointer(&{{.}}[0])",
+//	{Kind: cc.Int}:                            "C.int({{.}})",
+//	{Kind: cc.Float}:                          "C.float({{.}})",
+//	{Kind: cc.Float, IsPointer: true}:         "(*C.float)({{.}})",
+//	{Kind: cc.Double}:                         "C.double({{.}})",
+//	{Kind: cc.Double, IsPointer: true}:        "(*C.double)({{.}})",
+//	{Kind: cc.Bool}:                           "C.bool({{.}})",
+//	{Kind: cc.FloatComplex}:                   "unsafe.Pointer(&{{.}})",
+//	{Kind: cc.DoubleComplex}:                  "unsafe.Pointer(&{{.}})",
+//	{Kind: cc.FloatComplex, IsPointer: true}:  "unsafe.Pointer(&{{.}}[0])",
+//	{Kind: cc.DoubleComplex, IsPointer: true}: "unsafe.Pointer(&{{.}}[0])",
 func CgoConversionFor(name string, typ cc.Type, types ...map[bg.TypeKey]bg.Template) string {
 	if typ == nil {
 		return "<nil>"
