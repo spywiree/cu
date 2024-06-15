@@ -3,8 +3,8 @@ package main
 import (
 	"text/template"
 
-	"github.com/cznic/cc"
 	bg "github.com/spywiree/bindgen"
+	"modernc.org/cc"
 )
 
 var skip = map[string]bool{

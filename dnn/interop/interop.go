@@ -2,13 +2,11 @@ package t2cudnn
 
 import (
 	cudnn "github.com/spywiree/cu/dnn"
-	"gorgonia.org/gorgonia"
 	"gorgonia.org/tensor"
 )
 
 var (
 	_ Tensor = &tensor.Dense{}
-	_ Tensor = &gorgonia.Node{}
 	_ Tensor = tensor.Tensor(nil)
 )
 
