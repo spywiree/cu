@@ -1,7 +1,7 @@
 package t2cudnn
 
 import (
-	cudnn "gorgonia.org/cu/dnn"
+	cudnn "github.com/spywiree/cu/dnn"
 	"gorgonia.org/gorgonia"
 	"gorgonia.org/tensor"
 )

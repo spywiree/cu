@@ -3,7 +3,7 @@ package nvrtc_test
 import (
 	"testing"
 
-	"gorgonia.org/cu/nvrtc"
+	"github.com/spywiree/cu/nvrtc"
 )
 
 func TestCompile(t *testing.T) {

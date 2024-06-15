@@ -159,7 +159,7 @@ These functions have a `*T` return value, but a possible null exception error mi
 
 # Build Errors/TODO
 ```
-# gorgonia.org/cu/dnn
+# github.com/spywiree/cu/dnn
 ./algorithm.go:9:2: type struct {} is not an expression
 ./generated_API.go:13:54: *Activation is not a type
 ./generated_API.go:34:53: *Activation is not a type

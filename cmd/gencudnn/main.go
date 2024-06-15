@@ -24,7 +24,7 @@ var model = bindgen.Model()
 
 func init() {
 	gopath := os.Getenv("GOPATH")
-	pkgloc = path.Join(gopath, "src/gorgonia.org/cu/dnn")
+	pkgloc = path.Join(gopath, "src/github.com/spywiree/cu/dnn")
 	apiFile = path.Join(pkgloc, "api.go")
 	ctxFile = path.Join(pkgloc, "ctx_api.go")
 	hdrfile = "cudnn.h"

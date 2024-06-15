@@ -3,7 +3,7 @@ package cublas_test
 import (
 	"fmt"
 
-	"gorgonia.org/cu"
+	"github.com/spywiree/cu"
 	"gorgonia.org/tensor"
 )
 

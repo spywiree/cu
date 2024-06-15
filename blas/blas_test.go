@@ -6,8 +6,8 @@ import (
 	"testing"
 	"unsafe"
 
+	"github.com/spywiree/cu"
 	"gonum.org/v1/gonum/blas"
-	"gorgonia.org/cu"
 )
 
 func TestMultithreadedCalls(t *testing.T) {

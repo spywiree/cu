@@ -4,8 +4,8 @@ import (
 	"reflect"
 	"unsafe"
 
-	"gorgonia.org/cu"
-	cublas "gorgonia.org/cu/blas"
+	"github.com/spywiree/cu"
+	cublas "github.com/spywiree/cu/blas"
 	"gorgonia.org/tensor"
 )
 

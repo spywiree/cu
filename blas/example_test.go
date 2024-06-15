@@ -6,9 +6,9 @@ import (
 	"unsafe"
 
 	"github.com/pkg/errors"
+	"github.com/spywiree/cu"
+	cublas "github.com/spywiree/cu/blas"
 	"gonum.org/v1/gonum/blas"
-	"gorgonia.org/cu"
-	cublas "gorgonia.org/cu/blas"
 	"gorgonia.org/tensor"
 )
 

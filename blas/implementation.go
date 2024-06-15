@@ -6,8 +6,8 @@ import (
 	"sync"
 
 	"github.com/pkg/errors"
+	"github.com/spywiree/cu"
 	"gonum.org/v1/gonum/blas"
-	"gorgonia.org/cu"
 )
 
 var (

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"runtime"
 
-	"gorgonia.org/cu"
+	"github.com/spywiree/cu"
 	"gorgonia.org/tensor"
 )
 
