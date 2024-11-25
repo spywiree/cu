@@ -10,7 +10,7 @@ require (
 	github.com/kr/pretty v0.3.1
 	github.com/pkg/errors v0.9.1
 	github.com/spywiree/bindgen v0.0.0-20240615193851-9cce1ce678e2
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	gonum.org/v1/gonum v0.15.1
 	gorgonia.org/tensor v0.9.24
 	modernc.org/cc v1.0.1
