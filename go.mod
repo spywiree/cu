@@ -1,7 +1,7 @@
 module github.com/spywiree/cu
 
 go 1.21
-toolchain go1.22.5
+toolchain go1.24.1
 
 require (
 	github.com/cloudflare/cfssl v1.6.5
@@ -11,7 +11,7 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/spywiree/bindgen v0.0.0-20240615193851-9cce1ce678e2
 	github.com/stretchr/testify v1.10.0
-	gonum.org/v1/gonum v0.15.1
+	gonum.org/v1/gonum v0.16.0
 	gorgonia.org/tensor v0.9.24
 	modernc.org/cc v1.0.1
 	modernc.org/xc v1.1.0
